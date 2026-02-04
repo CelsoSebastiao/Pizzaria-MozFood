@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-MZ">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Slab:wght@400;700&display=swap"
+        rel="stylesheet">
     <style>
         :root {
             --primary-color: #D32F2F;
@@ -35,7 +38,10 @@
             background-color: var(--white);
         }
 
-        h1, h2, h3, h4 {
+        h1,
+        h2,
+        h3,
+        h4 {
             font-family: 'Roboto Slab', serif;
             font-weight: 700;
             margin-bottom: 1rem;
@@ -263,7 +269,8 @@
             transition: var(--transition);
         }
 
-        .filter-btn.active, .filter-btn:hover {
+        .filter-btn.active,
+        .filter-btn:hover {
             background-color: var(--primary-color);
             color: white;
         }
@@ -627,7 +634,8 @@
             color: #ccc;
         }
 
-        .footer-links h3, .footer-contact h3 {
+        .footer-links h3,
+        .footer-contact h3 {
             color: var(--white);
             margin-bottom: 20px;
             font-size: 1.3rem;
@@ -717,19 +725,19 @@
             h1 {
                 font-size: 2.5rem;
             }
-            
+
             h2 {
                 font-size: 2rem;
             }
-            
+
             .location-container {
                 grid-template-columns: 1fr;
             }
-            
+
             .map-container {
                 order: -1;
             }
-            
+
             .cart-sidebar {
                 width: 100%;
                 right: -100%;
@@ -748,31 +756,31 @@
                 padding: 20px;
                 box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
             }
-            
+
             nav ul.active {
                 display: flex;
             }
-            
+
             nav ul li {
                 margin: 10px 0;
             }
-            
+
             .mobile-menu-btn {
                 display: block;
             }
-            
+
             .hero {
                 padding: 150px 0 80px;
             }
-            
+
             .hero h1 {
                 font-size: 2.5rem;
             }
-            
+
             section {
                 padding: 60px 0;
             }
-            
+
             .header-right {
                 gap: 15px;
             }
@@ -782,25 +790,25 @@
             .hero h1 {
                 font-size: 2rem;
             }
-            
+
             .hero p {
                 font-size: 1rem;
             }
-            
+
             .btn {
                 padding: 12px 24px;
                 font-size: 0.9rem;
             }
-            
+
             .menu-container {
                 grid-template-columns: 1fr;
             }
-            
+
             .cart-item {
                 flex-direction: column;
                 align-items: flex-start;
             }
-            
+
             .cart-item-img {
                 width: 100%;
                 height: 150px;
@@ -809,6 +817,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Header -->
     <header>
@@ -817,11 +826,11 @@
                 <i class="fas fa-pizza-slice" style="font-size: 2rem; color: var(--primary-color);"></i>
                 <h1>Moz<span>Food</span></h1>
             </div>
-            
+
             <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <i class="fas fa-bars"></i>
             </button>
-            
+
             <nav>
                 <ul id="navMenu">
                     <li><a href="#home">Início</a></li>
@@ -831,7 +840,7 @@
                     <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
-            
+
             <div class="header-right">
                 <div class="cart-icon" id="cartIcon">
                     <i class="fas fa-shopping-cart"></i>
@@ -849,7 +858,7 @@
                 <i class="fas fa-times"></i>
             </button>
         </div>
-        
+
         <div class="cart-items" id="cartItems">
             <!-- Itens do carrinho serão adicionados aqui dinamicamente -->
             <div class="cart-empty">
@@ -858,7 +867,7 @@
                 <p>Adicione itens deliciosos do nosso cardápio!</p>
             </div>
         </div>
-        
+
         <div class="cart-footer" id="cartFooter" style="display: none;">
             <div class="cart-total">
                 <span>Total:</span>
@@ -869,7 +878,7 @@
             </button>
         </div>
     </div>
-    
+
     <!-- Overlay para fechar o carrinho -->
     <div class="overlay" id="overlay"></div>
 
@@ -877,7 +886,8 @@
     <section class="hero" id="home">
         <div class="container">
             <h1>Sabores Moçambicanos com Toque Italiano</h1>
-            <p>Experimente nossas pizzas artesanais feitas com ingredientes locais frescos e receitas tradicionais italianas. Entrega rápida em toda Maputo!</p>
+            <p>Experimente nossas pizzas artesanais feitas com ingredientes locais frescos e receitas tradicionais
+                italianas. Entrega rápida em toda Maputo!</p>
             <a href="#menu" class="btn">Ver Cardápio</a>
         </div>
     </section>
@@ -886,14 +896,14 @@
     <section class="menu" id="menu">
         <div class="container">
             <h2>Cardápio MozFood</h2>
-            
+
             <div class="menu-filters">
                 <button class="filter-btn active" data-filter="all">Todas</button>
                 <button class="filter-btn" data-filter="tradicional">Tradicionais</button>
                 <button class="filter-btn" data-filter="especial">Especiais</button>
                 <button class="filter-btn" data-filter="vegetariana">Vegetarianas</button>
             </div>
-            
+
             <div class="menu-container" id="menuContainer">
                 <!-- Pizzas serão carregadas dinamicamente pelo JavaScript -->
             </div>
@@ -914,7 +924,7 @@
                             <p>Maputo, Moçambique</p>
                         </div>
                     </div>
-                    
+
                     <div class="info-item">
                         <i class="fas fa-clock"></i>
                         <div>
@@ -924,7 +934,7 @@
                             <p>Domingo: 12h às 21h</p>
                         </div>
                     </div>
-                    
+
                     <div class="info-item">
                         <i class="fas fa-phone-alt"></i>
                         <div>
@@ -932,7 +942,7 @@
                             <p>+258 84 123 4567</p>
                         </div>
                     </div>
-                    
+
                     <div class="info-item">
                         <i class="fas fa-money-bill-wave"></i>
                         <div>
@@ -940,14 +950,17 @@
                             <p>Dinheiro, M-Pesa, Multicaixa, Visa, Mastercard</p>
                         </div>
                     </div>
-                    
-                    <a href="https://wa.me/258841234567?text=Olá! Gostaria de fazer um pedido na MozFood." target="_blank" class="btn btn-whatsapp">
+
+                    <a href="https://wa.me/258841234567?text=Olá! Gostaria de fazer um pedido na MozFood."
+                        target="_blank" class="btn btn-whatsapp">
                         <i class="fab fa-whatsapp"></i> Pedir pelo WhatsApp
                     </a>
                 </div>
-                
+
                 <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28680.156511042197!2d32.56247933476562!3d-25.968400000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee69b203b9b832b%3A0x58d9f6c7a54dcdc7!2sMaputo%2C%20Mozambique!5e0!3m2!1sen!2sbr!4v1690222636275!5m2!1sen!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28680.156511042197!2d32.56247933476562!3d-25.968400000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee69b203b9b832b%3A0x58d9f6c7a54dcdc7!2sMaputo%2C%20Mozambique!5e0!3m2!1sen!2sbr!4v1690222636275!5m2!1sen!2sbr"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -960,7 +973,8 @@
             <div class="testimonials-container">
                 <!-- Testemunho 1 -->
                 <div class="testimonial">
-                    <p class="testimonial-text">"A melhor pizza de Maputo! A combinação de sabores moçambicanos com a técnica italiana é incrível. A Pizza Matapa é minha favorita!"</p>
+                    <p class="testimonial-text">"A melhor pizza de Maputo! A combinação de sabores moçambicanos com a
+                        técnica italiana é incrível. A Pizza Matapa é minha favorita!"</p>
                     <div class="testimonial-author">
                         <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Carla dos Santos">
                         <div>
@@ -975,10 +989,11 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Testemunho 2 -->
                 <div class="testimonial">
-                    <p class="testimonial-text">"Sempre peço pizza aqui para reuniões familiares. A entrega é rápida e a qualidade é consistente. A de frango com piri-piri é espetacular!"</p>
+                    <p class="testimonial-text">"Sempre peço pizza aqui para reuniões familiares. A entrega é rápida e a
+                        qualidade é consistente. A de frango com piri-piri é espetacular!"</p>
                     <div class="testimonial-author">
                         <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="João Muchanga">
                         <div>
@@ -993,10 +1008,11 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Testemunho 3 -->
                 <div class="testimonial">
-                    <p class="testimonial-text">"Como vegetariana, aprecio muito as opções sem carne. A pizza de legumes com queijo de cabra é deliciosa e os ingredientes são sempre frescos."</p>
+                    <p class="testimonial-text">"Como vegetariana, aprecio muito as opções sem carne. A pizza de legumes
+                        com queijo de cabra é deliciosa e os ingredientes são sempre frescos."</p>
                     <div class="testimonial-author">
                         <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ana Macuácua">
                         <div>
@@ -1019,9 +1035,11 @@
     <section class="cta" id="contact">
         <div class="container">
             <h2>Pronto para Saborear?</h2>
-            <p>Faça seu pedido agora mesmo e receba em casa uma pizza quentinha e deliciosa em até 40 minutos em Maputo!</p>
+            <p>Faça seu pedido agora mesmo e receba em casa uma pizza quentinha e deliciosa em até 40 minutos em Maputo!
+            </p>
             <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                <a href="https://wa.me/258841234567?text=Olá! Gostaria de fazer um pedido na MozFood." target="_blank" class="btn btn-whatsapp">
+                <a href="https://wa.me/258841234567?text=Olá! Gostaria de fazer um pedido na MozFood." target="_blank"
+                    class="btn btn-whatsapp">
                     <i class="fab fa-whatsapp"></i> Pedir pelo WhatsApp
                 </a>
                 <button class="btn btn-secondary" id="openCartBtn">
@@ -1037,14 +1055,15 @@
             <div class="footer-container">
                 <div class="footer-about">
                     <div class="footer-logo">Moz<span>Food</span></div>
-                    <p>A melhor pizzaria de Maputo, combinando receitas tradicionais italianas com ingredientes frescos moçambicanos. Há mais de 10 anos levando sabor e qualidade para sua mesa.</p>
+                    <p>A melhor pizzaria de Maputo, combinando receitas tradicionais italianas com ingredientes frescos
+                        moçambicanos. Há mais de 10 anos levando sabor e qualidade para sua mesa.</p>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="footer-links">
                     <h3>Links Rápidos</h3>
                     <ul>
@@ -1055,7 +1074,7 @@
                         <li><a href="#contact">Contato</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-contact">
                     <h3>Contato</h3>
                     <p><i class="fas fa-map-marker-alt"></i> Av. 25 de Setembro, 1234 - Maputo</p>
@@ -1064,14 +1083,15 @@
                     <p><i class="fas fa-clock"></i> Seg-Dom: 11h às 23h</p>
                 </div>
             </div>
-            
+
             <div class="copyright">
                 <p>&copy; 2023 Pizzaria MozFood. Todos os direitos reservados.</p>
                 <p>Moçambique - Orgulhosamente moçambicana</p>
             </div>
-            
+
             <div class="creator-credit">
-                <p>Created by <a href="https://github.com/celsomongane" target="_blank">Celso Mongane</a> | Desenvolvimento Web</p>
+                <p>Created by <a href="https://github.com/celsomongane" target="_blank">Celso Mongane</a> |
+                    Desenvolvimento Web</p>
             </div>
         </div>
     </footer>
@@ -1159,14 +1179,14 @@
             // Menu mobile
             const mobileMenuBtn = document.getElementById('mobileMenuBtn');
             const navMenu = document.getElementById('navMenu');
-            
+
             mobileMenuBtn.addEventListener('click', () => {
                 navMenu.classList.toggle('active');
-                mobileMenuBtn.innerHTML = navMenu.classList.contains('active') 
-                    ? '<i class="fas fa-times"></i>' 
+                mobileMenuBtn.innerHTML = navMenu.classList.contains('active')
+                    ? '<i class="fas fa-times"></i>'
                     : '<i class="fas fa-bars"></i>';
             });
-            
+
             // Fecha o menu ao clicar em um link
             const navLinks = document.querySelectorAll('nav ul li a');
             navLinks.forEach(link => {
@@ -1175,17 +1195,17 @@
                     mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
                 });
             });
-            
+
             // Smooth scroll para links internos
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
+                anchor.addEventListener('click', function (e) {
                     e.preventDefault();
-                    
+
                     const targetId = this.getAttribute('href');
-                    if(targetId === '#') return;
-                    
+                    if (targetId === '#') return;
+
                     const targetElement = document.querySelector(targetId);
-                    if(targetElement) {
+                    if (targetElement) {
                         window.scrollTo({
                             top: targetElement.offsetTop - 100,
                             behavior: 'smooth'
@@ -1193,11 +1213,11 @@
                     }
                 });
             });
-            
+
             // Adiciona classe ao header quando rolar a página
             window.addEventListener('scroll', () => {
                 const header = document.querySelector('header');
-                if(window.scrollY > 50) {
+                if (window.scrollY > 50) {
                     header.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
                 } else {
                     header.style.boxShadow = 'var(--shadow)';
@@ -1210,7 +1230,7 @@
             closeCart.addEventListener('click', closeCartFunc);
             overlay.addEventListener('click', closeCartFunc);
             checkoutBtn.addEventListener('click', checkout);
-            
+
             // Filtros do menu
             filterBtns.forEach(btn => {
                 btn.addEventListener('click', () => {
@@ -1253,9 +1273,9 @@
         function addToCart(pizzaId, quantity = 1) {
             const pizza = pizzas.find(p => p.id === pizzaId);
             if (!pizza) return;
-            
+
             const existingItem = cart.find(item => item.id === pizzaId);
-            
+
             if (existingItem) {
                 existingItem.quantity += quantity;
             } else {
@@ -1267,7 +1287,7 @@
                     image: pizza.image
                 });
             }
-            
+
             saveCartToStorage();
             updateCartUI();
             showNotification(`${pizza.name} adicionada ao carrinho!`);
@@ -1284,7 +1304,7 @@
                 removeFromCart(pizzaId);
                 return;
             }
-            
+
             const item = cart.find(item => item.id === pizzaId);
             if (item) {
                 item.quantity = newQuantity;
@@ -1301,7 +1321,7 @@
             // Atualiza contador do carrinho
             const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
             cartCount.textContent = totalItems;
-            
+
             // Atualiza lista de itens no carrinho
             if (cart.length === 0) {
                 cartItems.innerHTML = `
@@ -1328,7 +1348,7 @@
                         </div>
                     </div>
                 `).join('');
-                
+
                 cartFooter.style.display = 'block';
                 cartTotal.textContent = `${calculateTotal()} MT`;
             }
@@ -1336,20 +1356,20 @@
 
         function checkout() {
             if (cart.length === 0) return;
-            
-            const phoneNumber = "258841234567";
+
+            const phoneNumber = "258841509766";
             let message = "Olá! Gostaria de fazer um pedido na MozFood:%0A%0A";
-            
+
             cart.forEach(item => {
                 message += `- ${item.quantity}x ${item.name}: ${item.price * item.quantity} MT%0A`;
             });
-            
+
             message += `%0ATotal: ${calculateTotal()} MT%0A%0A`;
             message += "Nome: [Seu nome]%0A";
             message += "Endereço: [Seu endereço]%0A";
             message += "Telefone: [Seu telefone]%0A";
             message += "Forma de pagamento: [Dinheiro/M-Pesa/Multicaixa]";
-            
+
             const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
             window.open(whatsappURL, '_blank');
         }
@@ -1373,12 +1393,12 @@
             `;
             notification.textContent = message;
             document.body.appendChild(notification);
-            
+
             // Mostra notificação
             setTimeout(() => {
                 notification.style.transform = 'translateX(0)';
             }, 10);
-            
+
             // Remove notificação após 3 segundos
             setTimeout(() => {
                 notification.style.transform = 'translateX(120%)';
@@ -1391,11 +1411,11 @@
         // Renderizar menu
         function renderMenu(filter = 'all') {
             let filteredPizzas = pizzas;
-            
+
             if (filter !== 'all') {
                 filteredPizzas = pizzas.filter(pizza => pizza.category === filter);
             }
-            
+
             menuContainer.innerHTML = filteredPizzas.map(pizza => `
                 <div class="menu-item" data-category="${pizza.category}">
                     <img src="${pizza.image}" alt="${pizza.name}" class="menu-item-img">
@@ -1422,7 +1442,7 @@
 
         // Variáveis para controlar quantidades no menu
         const menuQuantities = {};
-        
+
         function incrementQuantity(pizzaId) {
             if (!menuQuantities[pizzaId]) {
                 menuQuantities[pizzaId] = 1;
@@ -1430,7 +1450,7 @@
             menuQuantities[pizzaId]++;
             document.getElementById(`qty-${pizzaId}`).textContent = menuQuantities[pizzaId];
         }
-        
+
         function decrementQuantity(pizzaId) {
             if (!menuQuantities[pizzaId] || menuQuantities[pizzaId] <= 1) {
                 menuQuantities[pizzaId] = 1;
@@ -1439,7 +1459,7 @@
             }
             document.getElementById(`qty-${pizzaId}`).textContent = menuQuantities[pizzaId];
         }
-        
+
         function addToCartFromMenu(pizzaId) {
             const quantity = menuQuantities[pizzaId] || 1;
             addToCart(pizzaId, quantity);
@@ -1456,4 +1476,5 @@
         window.addToCartFromMenu = addToCartFromMenu;
     </script>
 </body>
+
 </html>
